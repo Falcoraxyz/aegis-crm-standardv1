@@ -131,6 +131,8 @@ Licensed under [**AGPL-3.0-or-later**](LICENSE).
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+**⚠️ Security:** Before committing, read [.github/PUSH_PROTECTION.md](.github/PUSH_PROTECTION.md) to prevent accidentally pushing private keys.
+
 ---
 
 ## 📞 Support

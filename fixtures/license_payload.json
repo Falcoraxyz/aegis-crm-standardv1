@@ -1,0 +1,20 @@
+{
+  "exp": null,
+  "feat": [
+    "base_access",
+    "premium_features"
+  ],
+  "iat": 1768227654,
+  "lid": "9f33ae126ecd098dbc3ecf02068c9f2f06a0b358bd4488604948a29313066786",
+  "lim": {
+    "seats": 1
+  },
+  "meta": {
+    "product": "Falcora Terminal",
+    "version": "2.0"
+  },
+  "pid": "falcora_terminal",
+  "tier": "lifetime_pro",
+  "upk": "02207bba70bc66309baa582a6ac120fd52d68026c51f6326f8ccedcbd2c1b7eb82",
+  "v": 1
+}

@@ -1,0 +1,41 @@
+[package]
+name = "aegis-crm-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Aegis CRM CLI - Command-line tool for cryptographic license management"
+keywords = ["cryptography", "licensing", "cli", "crm"]
+categories = ["command-line-utilities", "cryptography"]
+
+[[bin]]
+name = "aegis"
+path = "src/main.rs"
+
+[dependencies]
+# Core library
+aegis-crm-core = { path = "../aegis-crm-core" }
+
+# CLI framework
+clap = { version = "4.5", features = ["derive"] }
+
+# Error handling
+anyhow = "1.0"
+
+# Encoding
+hex = "0.4"
+base64 = "0.22"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Date/time formatting
+chrono = "0.4"
+
+# Random number generation (for challenge)
+getrandom = "0.2"
+
+[dev-dependencies]
+tempfile = "3.12"

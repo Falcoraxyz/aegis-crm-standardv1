@@ -1,0 +1,114 @@
+# =========================
+# Aegis CRM - .gitignore
+# Rust Workspace + CLI
+# =========================
+
+# --- Rust build artifacts ---
+/target/
+/**/target/
+debug/
+
+# --- Cargo ---
+Cargo.lock
+# NOTE:
+# For libraries, lockfile usually not committed.
+# Remove this line if you want reproducible builds.
+
+# --- Rustfmt backups ---
+**/*.rs.bk
+
+# --- MSVC debug info ---
+*.pdb
+
+# --- cargo-mutants output ---
+**/mutants.out*/
+
+# --- Rust Analyzer ---
+/.rustc_info.json
+/.rust-analyzer/
+/**/.rust-analyzer/
+
+# --- IDE: VS Code ---
+/**/.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# --- IDE: JetBrains/CLion/RustRover ---
+/**/.idea/
+.idea/
+**/*.iml
+*.iml
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Windows ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- Linux ---
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+*.rej
+
+# --- Node (optional tooling) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Python / misc ---
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.local
+
+# --- Test outputs / coverage ---
+coverage/
+*.lcov
+
+# never commit private keys
+**/*_priv.hex
+**/*.cert
+**/pop_sig.hex
+
+fixtures/*_priv.hex
+**/*_priv.hex
+*.key
+*.pem
+*.p12
+*.pfx
+
+
+# =========================
+# DO NOT IGNORE (important)
+# =========================
+# fixtures/  -> committed (golden vectors)
+# assets/    -> committed (branding)
+# docs/      -> committed
+# examples/  -> committed
+# Spec/     -> committed (specs/design/requirements/tasks)

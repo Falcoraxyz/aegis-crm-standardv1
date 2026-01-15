@@ -1,0 +1,54 @@
+# =========================
+# Aegis CRM - .gitattributes
+# =========================
+
+# --- Default behavior ---
+* text=auto
+
+# --- Force LF for source code/docs ---
+*.rs            text eol=lf
+*.toml          text eol=lf
+*.md            text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.json          text eol=lf
+*.txt           text eol=lf
+*.sh            text eol=lf
+*.ps1           text eol=crlf
+*.bat           text eol=crlf
+
+# --- Rust tooling files ---
+rust-toolchain.toml text eol=lf
+Cargo.toml          text eol=lf
+
+# --- GitHub Actions ---
+.github/workflows/*.yml text eol=lf
+.github/workflows/*.yaml text eol=lf
+
+# --- Treat certificates & fixtures as binary (no EOL conversion, no diff) ---
+*.cert          -text -diff
+*.base64        text eol=lf
+*.hex           text eol=lf
+
+# --- Images are binary ---
+*.png           -text
+*.jpg           -text
+*.jpeg          -text
+*.webp          -text
+*.gif           -text
+*.ico           -text
+
+# --- SVG as text (so diffs work) ---
+*.svg           text eol=lf
+
+# --- Archives as binary ---
+*.zip           -text
+*.tar           -text
+*.gz            -text
+*.7z            -text
+
+# --- Make markdown diffs cleaner ---
+*.md diff=markdown
+
+# --- Ensure lock/cbor/etc never modified by EOL ---
+*.cbor          -text -diff

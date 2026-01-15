@@ -1,0 +1,12 @@
+{
+  "tier": "lifetime_pro",
+  "expires_at": null,
+  "features": [
+    "ALL"
+  ],
+  "limits": null,
+  "metadata": {
+    "product": "Falcora Terminal",
+    "version": "2.0"
+  }
+}

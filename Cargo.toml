@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/aegis-crm-core",
+    "crates/aegis-crm-cli",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+authors = ["Falcora Studio"]
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/Falcoraxyz/Aegis-CRM-Standard"
+rust-version = "1.70"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  rust:
+    name: Rust (fmt + clippy + test)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cargo fmt
+        run: cargo fmt --check
+
+      - name: Cargo clippy
+        run: cargo clippy --workspace --all-targets --all-features -- -D warnings
+
+      - name: Cargo test
+        run: cargo test --workspace --all-features
+
+      - name: Generate fixtures and ensure clean git diff
+        run: |
+          cargo run -p aegis-crm-core --example generate_fixtures
+          test -z "$(git status --porcelain)" || (echo "❌ Fixtures changed. Run generate_fixtures and commit the updated fixtures." && git diff && exit 1)

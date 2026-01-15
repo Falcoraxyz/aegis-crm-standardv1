@@ -1,0 +1,18 @@
+{
+  "tier": "campus",
+  "expires_at": 1767225600,
+  "features": [
+    "base_access",
+    "education_features",
+    "collaboration_tools"
+  ],
+  "limits": {
+    "seat_max": 100,
+    "offline_grace_days": 14
+  },
+  "metadata": {
+    "product": "Falcora Terminal",
+    "version": "2.0",
+    "university": "Massachusetts Institute of Technology"
+  }
+}

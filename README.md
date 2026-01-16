@@ -1,9 +1,23 @@
-# Aegis CRM Standard
+<p align="center">
+  <img src="assets/banner.png" width="1000" />
+</p>
 
-> **Offline-first, serverless cryptographic license management standard**
+<h1 align="center">Aegis CRM Standard</h1>
 
-[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](LICENSE)
-[![Rust](https://img.shields.io/badge/rust-1.70%2B-orange.svg)](https://www.rust-lang.org)
+<p align="center">
+  <b>Offline-first, serverless cryptographic license management standard</b>
+</p>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-AGPL%203.0-blue.svg" />
+  </a>
+  <a href="https://www.rust-lang.org">
+    <img src="https://img.shields.io/badge/rust-1.70%2B-orange.svg" />
+  </a>
+</p>
+
+---
 
 Aegis CRM is a **math-based license verification system** that works offline, in air-gapped environments, and without any central server dependency.
 
@@ -13,10 +27,10 @@ Aegis CRM is a **math-based license verification system** that works offline, in
 
 ## 🎯 Core Principles
 
-- **Math Trust > Server Trust** - Cryptographic proofs, not API calls
-- **Offline-First** - Works in air-gapped environments  
-- **Privacy-First** - No telemetry, no tracking, no phone-home
-- **Anti-Keygen** - Proof-of-Possession prevents key sharing
+- **Math Trust > Server Trust** — Cryptographic proofs, not API calls
+- **Offline-First** — Works in air-gapped environments  
+- **Privacy-First** — No telemetry, no tracking, no phone-home
+- **Anti-Keygen** — Proof-of-Possession prevents key sharing
 
 ---
 
@@ -30,11 +44,20 @@ Aegis CRM is a **math-based license verification system** that works offline, in
 
 ---
 
+## 🧩 Architecture
+
+<p align="center">
+  <img src="assets/architecture.png" width="900" />
+</p>
+
+---
+
 ## 📦 Quick Start
 
 ### Installation
 
 Add to your `Cargo.toml`:
+
 ```toml
 [dependencies]
 aegis-crm-core = "1.0"
@@ -86,8 +109,8 @@ See [**docs/CLI.md**](docs/CLI.md) for CLI tool usage.
 | [**STRUCTURE.md**](STRUCTURE.md) | Project structure overview |
 
 **For Contributors:**
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
-- [internal/docs/](internal/docs/) - Development documentation (Quality, DoD, Tasks)
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines  
+- [internal/docs/](internal/docs/) — Development documentation (Quality, DoD, Tasks)
 
 ---
 
@@ -125,7 +148,7 @@ cargo run -p aegis-crm-core --example generate_fixtures
 
 Licensed under [**AGPL-3.0-or-later**](LICENSE).
 
-**Commercial licenses available** - Contact for enterprise licensing.
+**Commercial licenses available** — Contact for enterprise licensing.
 
 ---
 
@@ -144,4 +167,4 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-**Aegis CRM Standard** - A generic licensing system for any product or service
+**Aegis CRM Standard** — A generic licensing system for any product or service

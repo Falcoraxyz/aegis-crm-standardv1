@@ -1,6 +1,6 @@
 {
   "tier": "campus",
-  "expires_at": 1767225600,
+  "expires_at": 1798761600,
   "features": [
     "base_access",
     "education_features",
@@ -11,8 +11,8 @@
     "offline_grace_days": 14
   },
   "metadata": {
-    "product": "Falcora Terminal",
-    "version": "2.0",
-    "university": "Massachusetts Institute of Technology"
+    "product": "Example Product",
+    "version": "1.0",
+    "university": "Example University"
   }
 }

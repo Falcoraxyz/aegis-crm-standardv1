@@ -181,7 +181,7 @@ aegis inspect \
 ```
 Certificate: ./license.cert
 Status: ✅ VALID
-Product: falcora_terminal
+Product: example_product
 License ID: 9f33ae12...
 Issued: 2026-01-12 08:14:14 UTC
 Expires: Never (perpetual)

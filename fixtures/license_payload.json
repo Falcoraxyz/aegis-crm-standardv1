@@ -10,10 +10,10 @@
     "seats": 1
   },
   "meta": {
-    "product": "Falcora Terminal",
-    "version": "2.0"
+    "product": "Example Product",
+    "version": "1.0"
   },
-  "pid": "falcora_terminal",
+  "pid": "example_product",
   "tier": "lifetime_pro",
   "upk": "02207bba70bc66309baa582a6ac120fd52d68026c51f6326f8ccedcbd2c1b7eb82",
   "v": 1

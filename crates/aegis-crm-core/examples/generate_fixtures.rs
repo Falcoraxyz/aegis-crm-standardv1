@@ -36,7 +36,7 @@ fn main() {
     // Lifetime Pro payload
     let payload_lifetime = LicensePayload {
         version: PROTOCOL_VERSION,
-        product_id: "falcora_terminal".to_string(),
+        product_id: "example_product".to_string(),
         license_id,
         issued_at: 1768227654,
         expiry: None,
@@ -48,8 +48,8 @@ fn main() {
             offline_grace_days: None,
         }),
         metadata: Some(Metadata {
-            product: Some("Falcora Terminal".to_string()),
-            version: Some("2.0".to_string()),
+            product: Some("Example Product".to_string()),
+            version: Some("1.0".to_string()),
             university: None,
         }),
     };
@@ -85,7 +85,7 @@ fn main() {
 
     let payload_json = serde_json::json!({
         "v": 1,
-        "pid": "falcora_terminal",
+        "pid": "example_product",
         "lid": hex::encode(license_id),
         "iat": 1768227654u64,
         "exp": null,
@@ -93,7 +93,7 @@ fn main() {
         "tier": "lifetime_pro",
         "feat": ["base_access", "premium_features"],
         "lim": {"seats": 1},
-        "meta": {"product": "Falcora Terminal", "version": "2.0"}
+        "meta": {"product": "Example Product", "version": "1.0"}
     });
 
     fs::write(

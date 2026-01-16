@@ -7,6 +7,8 @@
 
 Aegis CRM is a **math-based license verification system** that works offline, in air-gapped environments, and without any central server dependency.
 
+> **Note:** This is a generic licensing standard not tied to any specific product. All examples use placeholder names for demonstration purposes.
+
 ---
 
 ## 🎯 Core Principles
@@ -142,4 +144,4 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-**Built with ❤️ by Falcora Studio**
+**Aegis CRM Standard** - A generic licensing system for any product or service
